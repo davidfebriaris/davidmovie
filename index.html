@@ -1,45 +1,67 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Movie</title>
+    <title>David Film</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>David Movie</h1>
+        <h1><a href="#">David Film</a></h1>
+        <button class="hamburger-menu" aria-label="Toggle Navigation">&#9776;</button>
         <nav>
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Film Terbaru</a></li>
-                <li><a href="#">Tentang Kami</a></li>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#latest">Films</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="film-list">
+        <section id="latest" class="film-list">
             <div class="film-item">
                 <img src="images/film1.png" alt="Film 1">
                 <h2>Film 1</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur quaerat sunt quisquam esse, quidem in, consequuntur perspiciatis, eum aperiam amet quod dolores excepturi eveniet eius delectus officiis ipsum ea!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia debitis eum quia, doloremque eveniet culpa at pariatur esse quo deleniti repellat voluptate magni, doloribus neque cupiditate! Quae quos accusamus qui?</p>
             </div>
             <div class="film-item">
                 <img src="images/film2.png" alt="Film 2">
                 <h2>Film 2</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis deleniti exercitationem minus dicta harum tempore dolor, optio cumque repudiandae iure ea a architecto, at ullam eius voluptas atque. Atque, ea!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos, voluptates doloribus porro eveniet quam ipsam. Ipsa nobis, soluta delectus neque corporis, repellat recusandae sequi explicabo, sed quidem tempore asperiores?</p>
             </div>
             <div class="film-item">
                 <img src="images/film3.png" alt="Film 3">
                 <h2>Film 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam porro deleniti aspernatur. Ea aut sapiente ducimus ad quasi quisquam error quos, doloribus laudantium maxime sint obcaecati, quod totam eum sequi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores pariatur, non culpa facere natus expedita totam fugiat iure possimus quo odit voluptatum dolorum aperiam est doloribus tempore eius laboriosam amet!</p>
             </div>
+            <div class="film-item">
+                <img src="images/Film 4.jpg" alt="Film 4">
+                <h2>Film 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam mollitia maxime minus quidem impedit obcaecati ipsa iusto autem, beatae asperiores, commodi quia neque consequatur laboriosam deleniti numquam doloremque, odio cupiditate?</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore voluptatibus voluptates illo! Officiis illo ad maiores fuga autem est eligendi placeat quas, commodi, inventore asperiores voluptates ratione magnam quam.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Website Film Sederhana. All rights reserved.</p>
+        <p>&copy; 2025 David Films. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger-menu");
+            const navLinks = document.querySelector(".nav-links");
+
+            hamburger.addEventListener("click", function () {
+                navLinks.classList.toggle("show");
+            });
+        });
+    </script>
 </body>
 </html>
